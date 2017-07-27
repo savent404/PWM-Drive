@@ -45,7 +45,7 @@ void PWM_BASIC_SetCC(PWM_Basic_t *ptr)
   switch (ptr->PWM_ID)
   {
   case 0x01: {
-    //TODO: Set CC
+    //TODO:Set CC
   } break;
   }
   ...

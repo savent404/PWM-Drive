@@ -14,7 +14,7 @@ void PWM_BASIC_Init(PWM_Basic_t *ptr)
   {
   case 0x01:
   {
-    // Enable PWM
+    // TODO:Enable PWM
     /*
       __HAL_HRTIM_SETCOMPARE(&hhrtim1, HRTIM_TIMERINDEX_TIMER_A, HRTIM_COMPAREUNIT_1, ptr->CC);
       HAL_HRTIM_WaveformOutputStart(&hhrtim1, HRTIM_OUTPUT_TA1);
@@ -26,6 +26,7 @@ void PWM_BASIC_Init(PWM_Basic_t *ptr)
 
   case 0x02:
   {
+    // TODO:Enable PWM
     /*
       __HAL_HRTIM_SETCOMPARE(&hhrtim1, HRTIM_TIMERINDEX_TIMER_A, HRTIM_COMPAREUNIT_2, ptr->CC);
       HAL_HRTIM_WaveformOutputStart(&hhrtim1, HRTIM_OUTPUT_TA2);
@@ -52,6 +53,7 @@ void PWM_BASIC_DeInit(PWM_Basic_t *ptr)
   {
   case 0x01:
   {
+    // TODO:DeInit PWM
     /*
       HAL_HRTIM_WaveformOutputStop(&hhrtim1, HRTIM_OUTPUT_TA1);
       */
@@ -61,6 +63,7 @@ void PWM_BASIC_DeInit(PWM_Basic_t *ptr)
 
   case 0x02:
   {
+    // TODO:DeInit PWM
     /*
       HAL_HRTIM_WaveformOutputStop(&hhrtim1, HRTIM_OUTPUT_TA2);
       */
@@ -96,6 +99,7 @@ void PWM_BASIC_SetCC(PWM_Basic_t *ptr, uint32_t CC)
   {
   case 0x01:
   {
+    // TODO:Set CC
     /*
     __HAL_HRTIM_SETCOMPARE(&hhrtim1, HRTIM_TIMERINDEX_TIMER_A, HRTIM_COMPAREUNIT_1, ptr->CC);
     */
@@ -104,6 +108,7 @@ void PWM_BASIC_SetCC(PWM_Basic_t *ptr, uint32_t CC)
 
   case 0x02:
   {
+    // TODO:Set CC
     /*
     __HAL_HRTIM_SETCOMPARE(&hhrtim1, HRTIM_TIMERINDEX_TIMER_A, HRTIM_COMPAREUNIT_2, ptr->CC);
     */
