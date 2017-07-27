@@ -15,6 +15,7 @@ void PWM_REGU_Init(PWM_Regulator_t *ptr)
   PWM_BASIC_Init(ptr->PWM_BASIC);
   arm_pid_init_f32(ptr->PWM_PID, 1);
 
+  // 根据ID进行的特殊操作，如使能ADC采样
   switch (ptr->ID)
   {
   default:
@@ -43,6 +44,7 @@ void PWM_REGU_Sample(PWM_Regulator_t *ptr)
   {
   case 0x01:
   {
+    // ADC采样(结构体中使用指针/直接保存值)
 #if USE_SAMPLE_PT == 0
 /*
       (ptr->Input_V) = ....
