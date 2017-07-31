@@ -38,7 +38,7 @@ void SPWM_Step(SPWM_t *ptr)
 
   if (ptr->Mode == SPWM_MODE_Bipolar)
   {
-    PWM_BASIC_SetDC(ptr->PWM_BASIC1, (buf + 0.5) / 2);
+    PWM_BASIC_SetDC(ptr->PWM_BASIC1, buf / 2.0 + 0.5/*(buf + 0.5) / 2*/);
   }
   else
   {
@@ -51,7 +51,7 @@ void SPWM_Step(SPWM_t *ptr)
     else
     {
       PWM_BASIC_SetDC(ptr->PWM_BASIC1, 0);
-      PWM_BAISC_SetDC(ptr->PWM_BASIC2, -buf);
+      PWM_BASIC_SetDC(ptr->PWM_BASIC2, -buf);
     }
   }
 

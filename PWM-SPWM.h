@@ -1,13 +1,14 @@
-#include _PWM_SPWM_H_
+#ifndef _PWM_SPWM_H_
+#define _PWM_SPWM_H_
 
 #include "PWM-Basic.h"
 #include <math.h>
 
 #ifndef PI
-#define PI 3.14159265358979f
+#define PI 3.1415926535897932384626433832795f
 #endif
 
-typdef struct _spwm_structure
+typedef struct _spwm_structure
 {
   PWM_Basic_t *PWM_BASIC1;
   PWM_Basic_t *PWM_BASIC2;
