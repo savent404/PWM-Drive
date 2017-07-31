@@ -13,8 +13,8 @@ typedef struct _spwm_structure
   PWM_Basic_t *PWM_BASIC1;
   PWM_Basic_t *PWM_BASIC2;
 
-  uint32_t Target_Frequence;
-  uint32_t Step_Frequence;
+  float Target_Frequence;
+  float Step_Frequence;
   float Phase; // ±PI
   float Range; // DutyCycle 0.0~1.0
 

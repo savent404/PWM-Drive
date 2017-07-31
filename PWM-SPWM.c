@@ -8,7 +8,7 @@
 void SPWM_Init(SPWM_t *ptr)
 {
   PWM_BASIC_Init(ptr->PWM_BASIC1);
-  if (ptr->Mode == SPWM_BRIGE_Full)
+  if (ptr->Brige == SPWM_BRIGE_Full)
   {
     PWM_BASIC_Init(ptr->PWM_BASIC2);
   }
